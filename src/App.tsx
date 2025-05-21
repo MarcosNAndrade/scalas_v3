@@ -19,6 +19,7 @@ function App() {
 
   return (
     <main>
+      <div style={{position: "fixed", top: "2%", left: "2%"}}><img src="logo_scalas.fw.png" width="50%" height="50%" /></div>
       <h1>My todos</h1>
       <button onClick={createTodo}>+ new</button>
       <ul>
