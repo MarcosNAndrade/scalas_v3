@@ -20,20 +20,29 @@ function App() {
   return (
     <main>
       <div style={{position: "fixed", top: "2%", left: "2%"}}><img src="logo_scalas.fw.png" width="50%" height="50%" /></div>
-      <h1>My todos</h1>
-      <button onClick={createTodo}>+ new</button>
+      <h1>Nosso site está em construção</h1>
+      <button onClick={createTodo}>+ Nova tarefa</button>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>{todo.content}</li>
         ))}
       </ul>
       <div>
-        🥳 App successfully hosted. Try creating a new todo.
+        🥳 App hospedado com sucesso. Por favor, tente incluir uma nova tarefa.
         <br />
         <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
-          Review next step of this tutorial.
+          Novas etapas do tutorial.
         </a>
       </div>
+
+      <div style={{position: "absolute", top: "80%", left: "35%"}}>
+        <center>
+          <span style={{fontSize: "70%", color: "#000000"}}>Desenvolvido por ScalaS Tecnologia e Informática Ltda.</span>
+          <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates"><span style={{fontSize: "70%", color: "#777777"}}>AWS Amplify</span></a>
+          <span style={{fontSize: "70%", color: "#000000"}}>2025 - Todos os direitos reservados</span>
+        </center>
+      </div>
+      
     </main>
   );
 }
